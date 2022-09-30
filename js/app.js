@@ -65,7 +65,8 @@ let enableBtnDownload = () => {
 let generate = () => {
     
     if(image.files[0] === undefined) 
-        alert('Gambar tidak boleh kosong!');
+        swal("Erorr!", "Gambar tidak boleh kosong!", "warning");
+        
     else{
         destroyInterval();                               
         imageReaderOnLoad();
